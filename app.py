@@ -20,7 +20,8 @@ load_dotenv()
 # We cache the agent setup so it doesn't reload on every message toggle
 @st.cache_resource
 def get_agent_executor():
-    llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0)
+    # llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0)
+    llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
     MCP_SERVER_URL = "https://vipfapwm3x.us-east-1.awsapprunner.com/mcp"
 
     client = MultiServerMCPClient({
