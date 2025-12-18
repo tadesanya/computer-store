@@ -4,3 +4,7 @@ mcp
 langgraph
 python-dotenv
 streamlit
+langchain
+langchain-classic
+langchain-community
+langchain-core
